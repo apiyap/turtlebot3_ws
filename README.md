@@ -34,3 +34,27 @@ export TURTLEBOT3_MODEL=waffle_pi
 ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 
 </pre>
+
+## Run Gazebo
+<pre>
+. ~/ros2_galactic/install/setup.bash
+. install/setup.bash
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+</pre>
+
+## Create Map
+<pre>
+. ~/ros2_galactic/install/setup.bash
+. install/setup.bash
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
+</pre>
+
+## Navigation
+<pre>
+. ~/ros2_galactic/install/setup.bash
+. install/setup.bash
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
+</pre>
