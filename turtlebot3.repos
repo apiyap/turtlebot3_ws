@@ -1,0 +1,17 @@
+repositories:
+  turtlebot3:
+    type: git
+    url: https://github.com/apiyap/turtlebot3.git
+    version: galactic-devel
+  turtlebot3_msgs:
+    type: git
+    url: https://github.com/apiyap/turtlebot3_msgs.git
+    version: galactic-devel
+  turtlebot3_simulations:
+    type: git
+    url: https://github.com/apiyap/turtlebot3_simulations.git
+    version: galactic-devel
+  DynamixelSDK:
+    type: git
+    url: https://github.com/apiyap/DynamixelSDK.git
+    version: galactic-devel

@@ -2,8 +2,14 @@
 
 ## install TURTLEBOT3
 <pre>
+
+
 mkdir -p ~/turtlebot3_ws/src
-cd ~/turtlebot3_ws/src/
+cd ~/turtlebot3_ws/
+vcs import src < turtlebot3.repos
+
+# OR cd src/
+
 git clone -b galactic-devel https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 git clone -b galactic-devel https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 git clone -b galactic-devel https://github.com/ROBOTIS-GIT/turtlebot3.git
